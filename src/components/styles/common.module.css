@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Когда тариф выделен */
+.container.highlighted {
+  transform: scale(1.05); /* Увеличиваем тариф */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Добавляем более выраженную тень */
+  z-index: 1; 
+}
+
+/* Контейнер списка тарифов */
+.tariffList {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Общий стиль для блока скорости */
+.speed {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Общий стиль для текста о трафике */
+.text {
+  background-color: #f2f2f2;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Общие стили для блоков названия и цены */
+.titleContainer, .priceContainer {
+
+  width: 100%;
+  text-align: center;
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.title {
+  color: white;
+  font-size: 18px;
+}
+
+.priceContainer {
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Стиль для цены */
+.priceUnit,
+.price,
+.perMonth {
+  color: white;
+}
+
+.priceUnit,
+.perMonth {
+  font-size: 16px;
+}
+
+.priceUnit {
+  align-self: flex-start;
+}
+
+.price {
+  font-size: 32px;
+}
+
